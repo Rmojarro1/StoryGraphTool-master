@@ -1,0 +1,236 @@
+{
+    "Title": "A Final Fantasy XIV Adventure: Stormblood",
+    "Credits": "Created by Adam Smith (amsmith@ucsc.edu)., modifed by Raul Mojarro",
+    "InitialLocation": "Intro",
+    "Locations": {
+        "Kresge": {
+            "Body": "This is Kresge College, lots of nice trees.",
+            "Choices": [
+                {
+                    "Text": "South",
+                    "Target": "Porter"
+                }
+            ]
+        },
+        "Intro":{
+            "Body": "You wake in an unfamiliar place with the sun blinding your eyes.", 
+            "Choices": [
+                {
+                    "Text": "Get up.",
+                    "Target": "Azim Steppe"
+                }
+            ]
+        }, 
+        "Azim Steppe":{
+            "Body": "Vast plains span as far as the eye can see! You spy an large structure in the distance, some steep mountains, and what could be a settlement far away.",
+            "Choices": [
+                {
+                    "Text": "Travel up the steep mountain", 
+                    "Target": "Dhoro Iloh"
+                }, 
+                {
+                    "Text": "Walk to the distant structure", 
+                    "Target": "Dawn Throne Base"
+                }, 
+                {
+                    "Text": "Walk to the nearby village", 
+                    "Target": "Reunion"
+                }
+
+            ] 
+        }, 
+        "Dhoro Iloh":{
+            "Body": "At the summit, you encounter a small festival populated by a strange race of catfish-like beings called Namazu.", 
+            "Choices": [
+                {
+                    "Text": "Approach the smart looking Namazu", 
+                    "Target": "NamazuNPC"
+                }, 
+                {
+                    "Text" : "Approach the Namzu selling familiar looking weapons", 
+                    "Target" : "NamazuA"
+                }, 
+                {
+                    "Text": "Scale back down the mountain", 
+                    "Target": "Azim Steppe"
+                }
+            ]
+        }, 
+        "NamazuNPC":{
+            "Body": "\"Enjoying our festival? Hope you're not too hungry, afraid some of my glutonous brothers ate too much so we're short on fish\"",
+            "Choices": [
+                {
+                    "Text" : "Return to the festival",
+                    "Target" : "Dhoro Iloh"
+                }
+            ]
+        }, 
+        "NamazuA":{
+            "Body": "\"Care to buy of these weapons, yes yes?\"", 
+            "Choices" : [
+                {
+                    "Text" : "Those are my weapons!", 
+                    "Target" : "NamazuB"
+                }                 
+            ]
+        },
+        "NamazuB":{
+            "Body": "\"Oh, I cannot part with these weapons for you. I am in need of food and lack the funds, yes yes.\"", 
+            "Choices" : [
+                {
+                    "Text" : "Return to the festival", 
+                    "Target" : "Dhoro Iloh"
+                }, 
+                {
+                    "Text" : "How about this fish?", 
+                    "Target": "Namazu"
+                }
+            ]
+        },
+        "Dawn Throne Base" :{
+            "Body" : "A strange castle like structure looms before you, surrounded by a lake. You have to climb a chain to enter it", 
+            "Choices" : [
+                {
+                    "Text" : "Climb the chain ladder", 
+                    "Target" : "Dawn Throne Interior"
+                }, 
+                {
+                    "Text" : "Investigate the moat", 
+                    "Target" : "Lake"
+                }, 
+                {
+                    "Text" : "Return to the plains", 
+                    "Target": "Azim Steppe"
+                }
+            ]
+        }, 
+        "Lake": {
+            "Body" : "You find an abandoned fishing pole lying in front of the water.", 
+            "Choices" : [
+                {
+                    "Text" : "Use the fishing pole", 
+                    "Target" : "Fish"
+                }, 
+                {
+                    "Text": "Return to the front of the castle", 
+                    "Target" : "Dawn Throne Base"
+                }
+            ]
+        }, 
+        "Dawn Throne Interior" : {
+            "Body" : "You enter a decorated throne room lined with weapons and statues", 
+            "Choices" : [
+                {
+                    "Text" : "Speak with the fierce warrior sitting upon the throne", 
+                    "Target" : "MagnaiA"
+                }, 
+                {
+                    "Text" : "Speak with the attendent", 
+                    "Target" : "Attendent"
+                }, 
+                {
+                    "Text" : "Exit the throne room", 
+                    "Target" : "Dawn Throne Base"
+                }
+            ]
+        },
+        "MagnaiA":{
+            "Body": "\"Afraid I'm not in the mood to aid you. Begone\"", 
+            "Choices" : [
+                {
+                    "Text" : "Step back", 
+                    "Target" : "Dawn Throne Interior"
+                }, 
+                {
+                    "Text" : "What if I offer up my Namazu companion as a humble sacrafice? I've heard they're quite tasty", 
+                    "Target": "Magnai"
+                }
+            ]
+        },
+        "Attendent" : {
+            "Body" : "\"I'm afraid Magnai is in a bit of foul mood after being tunred down yet again. Perhaps try lifing his spirits? I know he hates Namazu\"", 
+            "Choices": [
+                {
+                    "Text" : "Step back", 
+                    "Target" : "Dawn Throne Interior"
+                }
+            ]
+
+        }, 
+        "Reunion" : {
+            "Body" : "A small trade outpost filled with merchants. You see a path leading south out of the valley.", 
+            "Choices" : [
+                {
+                    "Text" : "Speak with the important lookin elder", 
+                    "Target" : "Elder"
+                }, 
+                {
+                    "Text" : "Return to the plains", 
+                    "Target" : "Azim Steppe"
+                }, 
+                {
+                    "Text" : "Follow the path south", 
+                    "Target" : "Battle0"
+                }
+            ]
+        }, 
+        "Elder" : {
+            "Body" : "\"Hello again, traveller. What's that, you don't remember anything? I guess that fearsome monster you were tasked with slaying must have hit you hard. \tHope you're better prepared this time.\"",
+            "Choices" : [
+                {
+                    "Text" : "Return to the market", 
+                    "Target" : "Reunion"
+                }
+            ] 
+            
+        }, 
+        "Battle0" : {
+            "Body" : "As you travel down the path, you see a fearsome Rathalos swoop down before you!", 
+            "Choices" : [
+                {
+                    "Text" : "You aren't prepared enough, retreat back to safety!", 
+                    "Target" : "Reunion"
+                }, 
+                {
+                    "Text" : "Draw your weapon", 
+                    "Target" : "Battle1"
+                }
+            ]
+        }, 
+        "Battle1" : {
+            "Body" : "Magnai charges forward with his axe and draws the beast's aggro, while the Namazu attempts to pierce its hide with a flurry of Triple Trident strikes!", 
+            "Choices" : [
+                {
+                    "Text" : "Begin casting a devasting spell", 
+                    "Target" : "Battle2a"
+                }, 
+                {
+                    "Text" : "Get a running start with your dual blades drawn", 
+                    "Target" : "Battle2b"
+                }
+            ]
+        }, 
+        "Battle2a" : {
+            "Body" : "You unleash the full power of Flare, defeating the foe!", 
+            "Choices" : [
+                {
+                    "Text" : "Sheath your weapon", 
+                    "Target" : "Ending"
+                }
+            ]
+        }, 
+        "Battle2b" : {
+            "Body" : "You leap into the air and drive both of your blades into the beast's skull as you dive back down! It is slain!", 
+            "Choices" : [
+                {
+                    "Text" : "Sheath your weapon", 
+                    "Target" : "Ending"
+                }
+            ]
+        }, 
+
+        "Ending": {
+            "Body": "You bid farewll to your companions and prepare for the Dawntrail expansion. The End"
+        }
+    }
+}
